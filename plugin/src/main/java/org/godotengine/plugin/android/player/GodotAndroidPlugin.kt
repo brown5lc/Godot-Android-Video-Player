@@ -6,6 +6,7 @@ import android.widget.Toast
 import org.godotengine.godot.Godot
 import org.godotengine.godot.plugin.GodotPlugin
 import org.godotengine.godot.plugin.UsedByGodot
+import org.godotengine.plugin.android.player.BuildConfig
 
 class GodotAndroidPlugin(godot: Godot): GodotPlugin(godot) {
 

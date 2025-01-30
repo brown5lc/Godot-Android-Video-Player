@@ -9,7 +9,7 @@ plugins {
 val pluginName = "GodotAndroidVideoPlayer"
 
 // TODO: Update value to match your plugin's package name.
-val pluginPackageName = "org.godotengine.plugin.android.video.player"
+val pluginPackageName = "org.godotengine.plugin.android.player"
 
 android {
     namespace = pluginPackageName
@@ -40,6 +40,9 @@ android {
 dependencies {
     implementation("org.godotengine:godot:4.3.0.stable")
     // TODO: Additional dependencies should be added to export_plugin.gd as well.
+    implementation("androidx.media3:media3-exoplayer:1.5.1")
+    implementation("androidx.media3:media3-exoplayer-dash:1.5.1")
+    implementation("androidx.media3:media3-ui:1.5.1")
 }
 
 // BUILD TASKS DEFINITION

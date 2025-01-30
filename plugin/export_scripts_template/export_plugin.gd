@@ -34,9 +34,17 @@ class AndroidExportPlugin extends EditorExportPlugin:
 	func _get_android_dependencies(platform, debug):
 		# TODO: Add remote dependices here.
 		if debug:
-			return PackedStringArray([])
+			return PackedStringArray([
+			    implementation("androidx.media3:media3-exoplayer:1.5.1"),
+                implementation("androidx.media3:media3-exoplayer-dash:1.5.1"),
+                implementation("androidx.media3:media3-ui:1.5.1")
+			])
 		else:
-			return PackedStringArray([])
+			return PackedStringArray([
+			    implementation("androidx.media3:media3-exoplayer:1.5.1"),
+                implementation("androidx.media3:media3-exoplayer-dash:1.5.1"),
+                implementation("androidx.media3:media3-ui:1.5.1")
+			])
 
 	func _get_name():
 		return _plugin_name
