@@ -1,5 +1,5 @@
 // TODO: Update to match your plugin's package name.
-package org.godotengine.plugin.android.template
+package org.godotengine.plugin.android.video.player
 
 import android.util.Log
 import android.widget.Toast
